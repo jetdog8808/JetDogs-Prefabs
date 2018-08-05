@@ -1,0 +1,27 @@
+V1.6
+*added 360 video player
+*added two handed tool grips. Final IK and standard assets varients
+*added stationary turrets. Final IK and standard assets varients
+*added opposable doll
+*added easy edit book cover
+*added webpanel book varient
+*added camera types varients (steady cam, cam crane, position board, follow cam)
+*reorganized prefab folder
+
+V1.5
+*added multiple books
+*local book
+*synced book
+*large local book
+*added basic info panel
+*panosphere
+
+V1.4
+*added streaming panel
+*added html clock/date
+*created documentation+links folder
+*created theater project
+
+v1.3
+*added 88 key midi keyboard set up
+*custom url video panel

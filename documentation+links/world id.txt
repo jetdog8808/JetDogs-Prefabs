@@ -1,0 +1,5 @@
+https://api.vrchat.cloud/launch?worldId=[world ID]&ref=vrchat.com&instanceId=[numbers]~public([owner's user id])~nonce([random nonsense])
+https://api.vrchat.cloud/launch?worldId=[world ID]&ref=vrchat.com&instanceId=[numbers]~hidden([owner's user id])~nonce([random nonsense])
+https://api.vrchat.cloud/launch?worldId=[world ID]&ref=vrchat.com&instanceId=[numbers]~friends([owner's user id])~nonce([random nonsense])
+https://api.vrchat.cloud/launch?worldId=[world ID]&ref=vrchat.com&instanceId=[numbers]~private([owner's user id or inviteurl])~nonce([random nonsense])
+https://api.vrchat.cloud/launch?worldId=[world ID]&ref=vrchat.com&instanceId=[numbers]~private([owner's user id or inviteurl])~canRequestInvite()~nonce([random nonsense])

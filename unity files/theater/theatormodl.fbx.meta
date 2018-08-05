@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 00eb9328b2e1bab44ac0a969656db81b
+timeCreated: 1530544722
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 16_9
+    100002: 4_3
+    100004: chair_back_1
+    100006: console
+    100008: Disc
+    100010: front_decore
+    100012: glass
+    100014: Lathe
+    100016: Plane
+    100018: room
+    100020: //RootNode
+    100022: walldec
+    400000: 16_9
+    400002: 4_3
+    400004: chair_back_1
+    400006: console
+    400008: Disc
+    400010: front_decore
+    400012: glass
+    400014: Lathe
+    400016: Plane
+    400018: room
+    400020: //RootNode
+    400022: walldec
+    2300000: 16_9
+    2300002: 4_3
+    2300004: chair_back_1
+    2300006: console
+    2300008: Disc
+    2300010: front_decore
+    2300012: glass
+    2300014: Lathe
+    2300016: Plane
+    2300018: room
+    2300020: walldec
+    3300000: 16_9
+    3300002: 4_3
+    3300004: chair_back_1
+    3300006: console
+    3300008: Disc
+    3300010: front_decore
+    3300012: glass
+    3300014: Lathe
+    3300016: Plane
+    3300018: room
+    3300020: walldec
+    4300000: Plane
+    4300002: Disc
+    4300004: Lathe
+    4300006: walldec
+    4300008: chair_back_1
+    4300010: console
+    4300012: room
+    4300014: glass
+    4300016: 4_3
+    4300018: front_decore
+    4300020: 16_9
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 1
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
