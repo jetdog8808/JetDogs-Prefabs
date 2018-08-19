@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1499085389372982}
+  m_IsPrefabParent: 1
+--- !u!1 &1499085389372982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4010479067902400}
+  - component: {fileID: 33453440441616630}
+  - component: {fileID: 23222282390648802}
+  - component: {fileID: 82744292082549402}
+  - component: {fileID: 114612217844562492}
+  m_Layer: 0
+  m_Name: date+clock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &4010479067902400
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499085389372982}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 30, y: 2.62, z: -31.476763}
+  m_LocalScale: {x: 4, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!23 &23222282390648802
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499085389372982}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33453440441616630
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499085389372982}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &82744292082549402
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499085389372982}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.05
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 0
+  MaxDistance: 100
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.5
+      value: 1
+      inSlope: -1.0105034
+      outSlope: -1.0105034
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: -0.99039525
+      outSlope: -0.99039525
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.25
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+    - serializedVersion: 2
+      time: 0.5
+      value: 1.0043297
+      inSlope: 4.0173187
+      outSlope: 4.0173187
+      tangentMode: 34
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114612217844562492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499085389372982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2062105122, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 30
+  webRoot: \jetdog's prefabs\html
+  defaultUrl: file:///jetdog's prefabs/html/date+clock.html
+  resolutionWidth: 1024
+  resolutionHeight: 256
+  displayRegion:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  interactive: 0
+  extraVideoScreens: []
+  localOnly: 0
+  syncURI: 0
+  syncInput: 0
+  syncDisplayAndAudio: 0
+  cursor: {fileID: 0}
+  transparent: 0
+  station: {fileID: 0}
+  cookiesEnabled: 0
+  autoFormSubmit: 0
+  webData:
+  - data: 3c68746d6c3e0a3c686561643e0a3c73637269707420747970653d22746578742f6a617661736372697074223e0a746461793d6e6577204172726179282253756e646179222c224d6f6e646179222c2254756573646179222c225765646e6573646179222c225468757273646179222c22467269646179222c22536174757264617922293b0a746d6f6e74683d6e657720417272617928224a616e75617279222c224665627275617279222c224d61726368222c22417072696c222c224d6179222c224a756e65222c224a756c79222c22417567757374222c2253657074656d626572222c224f63746f626572222c224e6f76656d626572222c22446563656d62657222293b0a0a66756e6374696f6e20476574436c6f636b28297b0a76617220643d6e6577204461746528293b0a766172206e6461793d642e67657444617928292c6e6d6f6e74683d642e6765744d6f6e746828292c6e646174653d642e6765744461746528292c6e796561723d642e67657446756c6c5965617228293b0a766172206e686f75723d642e676574486f75727328292c6e6d696e3d642e6765744d696e7574657328292c6e7365633d642e6765745365636f6e647328292c61703b0a0a6966286e686f75723d3d30297b61703d2220414d223b6e686f75723d31323b7d0a656c7365206966286e686f75723c3132297b61703d2220414d223b7d0a656c7365206966286e686f75723d3d3132297b61703d2220504d223b7d0a656c7365206966286e686f75723e3132297b61703d2220504d223b6e686f75722d3d31323b7d0a0a6966286e6d696e3c3d3929206e6d696e3d2230222b6e6d696e3b0a6966286e7365633c3d3929206e7365633d2230222b6e7365633b0a0a646f63756d656e742e676574456c656d656e74427949642827636c6f636b626f7827292e696e6e657248544d4c3d22222b746461795b6e6461795d2b222c20222b746d6f6e74685b6e6d6f6e74685d2b2220222b6e646174652b222c20222b6e796561722b2220222b6e686f75722b223a222b6e6d696e2b223a222b6e7365632b61702b22223b0a7d0a0a77696e646f772e6f6e6c6f61643d66756e6374696f6e28297b0a476574436c6f636b28293b0a736574496e74657276616c28476574436c6f636b2c31303030293b0a7d0a3c2f7363726970743e0a3c6469762069643d22636c6f636b626f7822207374796c653d22666f6e743a3634707420417269616c3b20636f6c6f723a233030303030303b223e3c2f6469763e0a0a3c2f626f64793e0a3c2f68746d6c3e0a
+    path: jetdog's prefabs/html/date+clock.html
