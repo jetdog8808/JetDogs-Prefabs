@@ -28,6 +28,7 @@ Material:
     - _SunIntensity: 0
     - _SunRadiusA: 0
     - _SunRadiusB: 0.1
+    - _node_4248: 2.76
     - _sun: 0
     m_Colors:
     - _color: {r: 1, g: 1, b: 1, a: 1}
