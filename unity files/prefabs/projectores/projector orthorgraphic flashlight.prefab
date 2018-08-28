@@ -179,4 +179,4 @@ Projector:
   m_Material: {fileID: 0}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4128
