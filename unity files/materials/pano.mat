@@ -73,6 +73,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _bias: 2
+    - _distance: 5
+    - _node_393: 12
     - _node_6929: 12
     - _node_9407: 13.5
     m_Colors:

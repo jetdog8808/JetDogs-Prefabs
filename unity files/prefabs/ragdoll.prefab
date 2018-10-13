@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 54172551373563066}
   - component: {fileID: 144505164883379292}
   - component: {fileID: 136595752871088578}
-  - component: {fileID: 114748839276801924}
   m_Layer: 0
   m_Name: RightUpLeg
   m_TagString: Untagged
@@ -116,7 +115,6 @@ GameObject:
   - component: {fileID: 54754468568235120}
   - component: {fileID: 144826921082710424}
   - component: {fileID: 136590549079922722}
-  - component: {fileID: 114679699084865038}
   m_Layer: 0
   m_Name: LeftForeArm
   m_TagString: Untagged
@@ -165,8 +163,6 @@ GameObject:
   - component: {fileID: 54292277138228948}
   - component: {fileID: 65606074618702406}
   - component: {fileID: 114325268389673624}
-  - component: {fileID: 114698435917039132}
-  - component: {fileID: 114462808968569786}
   - component: {fileID: 114628725851018414}
   m_Layer: 13
   m_Name: ragdoll
@@ -186,7 +182,6 @@ GameObject:
   - component: {fileID: 54171979024928022}
   - component: {fileID: 144496639375315606}
   - component: {fileID: 136237302245644224}
-  - component: {fileID: 114947892136166604}
   m_Layer: 0
   m_Name: LeftLeg
   m_TagString: Untagged
@@ -235,7 +230,6 @@ GameObject:
   - component: {fileID: 54502926397013474}
   - component: {fileID: 144939448570072826}
   - component: {fileID: 136865271240862514}
-  - component: {fileID: 114835256990662660}
   m_Layer: 0
   m_Name: LeftArm
   m_TagString: Untagged
@@ -269,7 +263,6 @@ GameObject:
   - component: {fileID: 54023443161757596}
   - component: {fileID: 144955530348496322}
   - component: {fileID: 136362950667199530}
-  - component: {fileID: 114433311412522072}
   m_Layer: 0
   m_Name: RightArm
   m_TagString: Untagged
@@ -454,7 +447,6 @@ GameObject:
   - component: {fileID: 54422537780755548}
   - component: {fileID: 144074738411868262}
   - component: {fileID: 136626142598797432}
-  - component: {fileID: 114958509305221488}
   m_Layer: 0
   m_Name: RightLeg
   m_TagString: Untagged
@@ -564,7 +556,6 @@ GameObject:
   - component: {fileID: 54595011605405252}
   - component: {fileID: 144691013192734892}
   - component: {fileID: 136456568136483574}
-  - component: {fileID: 114201900596434406}
   m_Layer: 0
   m_Name: RightForeArm
   m_TagString: Untagged
@@ -658,7 +649,6 @@ GameObject:
   - component: {fileID: 54647440956148270}
   - component: {fileID: 144998898867266568}
   - component: {fileID: 136068099205710432}
-  - component: {fileID: 114081727365822106}
   m_Layer: 0
   m_Name: LeftUpLeg
   m_TagString: Untagged
@@ -842,7 +832,6 @@ GameObject:
   - component: {fileID: 54786041806321908}
   - component: {fileID: 144284681968742958}
   - component: {fileID: 65668763914961972}
-  - component: {fileID: 114137446831723584}
   m_Layer: 0
   m_Name: Spine
   m_TagString: Untagged
@@ -936,7 +925,6 @@ GameObject:
   - component: {fileID: 54985878174234324}
   - component: {fileID: 144922898759740114}
   - component: {fileID: 135077720969452614}
-  - component: {fileID: 114423307293813472}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -2280,51 +2268,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.40830603, y: 0.32895696, z: 0.28292346}
   m_Center: {x: 0.000005364418, y: 0.1644785, z: -0.021094412}
---- !u!114 &114081727365822106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1686161923987240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
---- !u!114 &114137446831723584
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1743955026812038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
---- !u!114 &114201900596434406
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1590734186071098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
 --- !u!114 &114325268389673624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2340,105 +2283,6 @@ MonoBehaviour:
   AllowCollisionTransfer: 1
   PlaymakerSyncState: 0
   PlaymakerSyncVariables: 1
---- !u!114 &114423307293813472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1819736571807060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
---- !u!114 &114433311412522072
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1211016257310252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
---- !u!114 &114462808968569786
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1100095303956950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1579128511, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactTextPlacement: {fileID: 0}
-  interactText: Use
-  interactTextGO: {fileID: 0}
-  proximity: 2
-  isHidden: 0
-  UsesAdvancedOptions: 1
-  ShowHelp: 1
-  Triggers:
-  - TriggerType: 15
-    BroadcastType: 4
-    Events:
-    - Name: TakeOwnership
-      EventType: 14
-      ParameterString: TakeOwnership
-      ParameterBoolOp: 0
-      ParameterBool: 0
-      ParameterFloat: 0
-      ParameterInt: 0
-      ParameterObject: {fileID: 0}
-      ParameterObjects:
-      - {fileID: 1100095303956950}
-      - {fileID: 1686161923987240}
-      - {fileID: 1129737643507430}
-      - {fileID: 1002529622087114}
-      - {fileID: 1480504216388316}
-      - {fileID: 1743955026812038}
-      - {fileID: 1199449767748422}
-      - {fileID: 1056763546747362}
-      - {fileID: 1819736571807060}
-      - {fileID: 1211016257310252}
-      - {fileID: 1590734186071098}
-      ParameterBytes: 
-    Name: Unnamed
-    Others: []
-    Key: 0
-    TriggerIndividuals: 0
-    Layers:
-      serializedVersion: 2
-      m_Bits: 0
-    Repeat: 0
-    LowPeriodTime: 0
-    HighPeriodTime: 0
-    ResetOnEnable: 0
-    EventFired: 0
-    Duration: 0
-    Timer: 0
-    DataElementIdx: 0
-    DataStorageShadowValues:
-    - ParameterString: 
-      ParameterBoolOp: 
-      ParameterFloat: 
-      ParameterInt: 
-    AfterSeconds: 0
-    ProbabilityLock: 
-    Probabilities: []
-    MidiChannel: 0
-    MidiNote: 0
-    OscAddr: 
 --- !u!114 &114628725851018414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2474,96 +2318,6 @@ MonoBehaviour:
   originalGravity: 1
   originalTrigger: 0
   originalParent: {fileID: 0}
---- !u!114 &114679699084865038
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1056763546747362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
---- !u!114 &114698435917039132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1100095303956950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -339397700, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
---- !u!114 &114748839276801924
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1002529622087114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
---- !u!114 &114835256990662660
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1199449767748422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
---- !u!114 &114947892136166604
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1129737643507430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
---- !u!114 &114958509305221488
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1480504216388316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 762633, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SynchronizePhysics: 1
-  AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
 --- !u!135 &135077720969452614
 SphereCollider:
   m_ObjectHideFlags: 1

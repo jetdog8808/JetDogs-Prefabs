@@ -61,6 +61,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DynamicEmissionLM: 1
+    - _Emission: 1
     - _EmissionLM: 1
     - _EmissionScale: 1
     - _GlossMapScale: 1
