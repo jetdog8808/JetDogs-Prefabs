@@ -2780,12 +2780,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowNonOwnerControl: 1
   VideoSearchRoot: youtube.com
+  MaxStreamQuality: 720
+  videoTextureFormat: 0
   AutoStart: 0
   Videos:
   - Source: 1
     VideoClip: {fileID: 0}
     PlaybackSpeed: 1
-    URL: https://www.youtube.com/watch?v=QKm-SOOMC4c
+    URL: https://www.youtube.com/watch?v=-xNN-bJQ4vI
     SyncType: 0
     SyncMinutes: 0
 --- !u!114 &114591311558564008
