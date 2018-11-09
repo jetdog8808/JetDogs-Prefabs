@@ -733,7 +733,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2816,7 +2816,7 @@ ParticleSystem:
     m_EnergyLossOnCollision:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3712,7 +3712,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -302510048
+  randomSeed: -437019250
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4353,8 +4353,8 @@ ParticleSystem:
     - time: 0
       minCount: 1
       maxCount: 1
-      cycleCount: 3
-      repeatInterval: 0.125
+      cycleCount: 1
+      repeatInterval: 0.143
   SizeModule:
     enabled: 0
     curve:
@@ -5990,7 +5990,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294701023
+      m_Bits: 4294594511
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
