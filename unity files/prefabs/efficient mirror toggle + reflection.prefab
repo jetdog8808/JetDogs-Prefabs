@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 4244168389364144}
   - component: {fileID: 33791091521848152}
   - component: {fileID: 23228143473750874}
-  - component: {fileID: 65575755127838172}
+  - component: {fileID: 64630492967517998}
   - component: {fileID: 114003423731660876}
   - component: {fileID: 114872132998395050}
   m_Layer: 0
@@ -147,8 +147,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1013572200632216}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.9}
+  m_LocalRotation: {x: -0, y: -0.7071066, z: -0, w: 0.70710707}
+  m_LocalPosition: {x: 0.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4485877657262100}
@@ -158,7 +158,7 @@ Transform:
   - {fileID: 4514845557708978}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!4 &4485877657262100
 Transform:
   m_ObjectHideFlags: 1
@@ -354,6 +354,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1840797746612464}
   m_Mesh: {fileID: 4300000, guid: 2bddb217e21b68a4a903c1e93280fe11, type: 3}
+--- !u!64 &64630492967517998
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1840797746612464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2bddb217e21b68a4a903c1e93280fe11, type: 3}
 --- !u!64 &64713626092196944
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -368,18 +382,6 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65575755127838172
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1840797746612464}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.11, z: 0.2}
-  m_Center: {x: 0, y: 0.0480817, z: 0}
 --- !u!114 &114003423731660876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -516,5 +518,5 @@ ReflectionProbe:
   m_BoxProjection: 1
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
-  m_Importance: 1
+  m_Importance: 2
   m_CustomBakedTexture: {fileID: 0}
