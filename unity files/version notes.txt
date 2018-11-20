@@ -1,3 +1,25 @@
+V2.1.0
+*added combat system example
+*added two way teleport pad
+*added thirdperson follow target
+*added thirdperson follow track
+*updated custom url UI
+*updated theaters
+*updated button prefab
+
+V2.0.1
+*added projectors
+*added ragdoll example
+*added url texture loader
+*added efficient mirror toggle + reflection
+*updated ui example
+*updated pano shader
+*updated url video player
+*rip webpanels
+
+V2.0
+open source update
+
 V1.6
 *added 360 video player
 *added two handed tool grips. Final IK and standard assets varients
