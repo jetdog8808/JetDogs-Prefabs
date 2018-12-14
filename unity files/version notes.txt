@@ -1,3 +1,13 @@
+V3.0.0
+*updated to Unity 2017.4.15f1
+*switched to post processing V2
+*added animation event example
+*added snap camera example
+*added audio bank example
+*added dynamic chair
+*added world HUD example
+*added post processing zone examples
+
 V2.1.0
 *added combat system example
 *added two way teleport pad

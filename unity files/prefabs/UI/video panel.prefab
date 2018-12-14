@@ -1590,6 +1590,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1605,6 +1606,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1988,6 +1990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowNonOwnerControl: 1
   VideoSearchRoot: youtube.com
+  MaxStreamQuality: 720
   Videos:
   - Source: 1
     AspectRatio: 0
@@ -6773,7 +6776,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'pause
+  m_Text: 'pause/ unpause
 
 '
 --- !u!114 &114868985401237000
@@ -7022,7 +7025,7 @@ MonoBehaviour:
   ShowHelp: 1
   Triggers:
   - TriggerType: 5
-    BroadcastType: 8
+    BroadcastType: 7
     Events:
     - Name: Play
       EventType: 14
@@ -9522,8 +9525,10 @@ VideoPlayer:
   m_Enabled: 1
   m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
   m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 3

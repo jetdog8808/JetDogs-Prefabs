@@ -42,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 8
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -71,23 +71,26 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 3
+    m_MixedBakeMode: 2
     m_BakeBackend: 0
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_ShadowMaskMode: 2
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -107,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &438902032
 Prefab:
@@ -118,17 +123,17 @@ Prefab:
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.41636354
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4683888046451172, guid: 4e7d67ab23eca0e4796a5101ec27bf95, type: 2}
       propertyPath: m_LocalPosition.x
@@ -210,17 +215,22 @@ Prefab:
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224574336957450354, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000030517578
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e7d67ab23eca0e4796a5101ec27bf95, type: 2}
@@ -278,6 +288,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -293,6 +304,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -767,18 +779,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4636730163383264, guid: 5c6a765aca0fc4340b7cd382f1c94f13,
     type: 2}
   m_PrefabInternal: {fileID: 924460854}
---- !u!114 &924460862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 924460855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentType: 1
 --- !u!1001 &1045910561
 Prefab:
   m_ObjectHideFlags: 0
@@ -893,17 +893,17 @@ Prefab:
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.41636354
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.99999994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4683888046451172, guid: 4e7d67ab23eca0e4796a5101ec27bf95, type: 2}
       propertyPath: m_LocalPosition.x
@@ -999,17 +999,22 @@ Prefab:
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224574336957450354, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e7d67ab23eca0e4796a5101ec27bf95, type: 2}
@@ -1408,8 +1413,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SynchronizePhysics: 1
   AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
 --- !u!65 &1471028549
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1449,6 +1452,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1464,6 +1468,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1507,6 +1512,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1522,6 +1528,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1539,9 +1546,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1544293477
@@ -6042,17 +6049,17 @@ Prefab:
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.41636354
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4683888046451172, guid: 4e7d67ab23eca0e4796a5101ec27bf95, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6137,17 +6144,22 @@ Prefab:
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224574336957450354, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000030517578
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e7d67ab23eca0e4796a5101ec27bf95, type: 2}
@@ -6192,6 +6204,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6207,6 +6220,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6249,12 +6263,12 @@ Prefab:
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224172541740740436, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4683888046451172, guid: 4e7d67ab23eca0e4796a5101ec27bf95, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6332,22 +6346,27 @@ Prefab:
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224410873533998850, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114295074197849152, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
         type: 2}
       propertyPath: m_Size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224574336957450354, guid: 4e7d67ab23eca0e4796a5101ec27bf95,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000030517578
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e7d67ab23eca0e4796a5101ec27bf95, type: 2}
