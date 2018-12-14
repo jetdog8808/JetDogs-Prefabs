@@ -1,11 +1,13 @@
 # JetDog's Prefabs
+
 Prefabs created by: jetdog8808
 
 Discord: jet#9481
 
-https://twitter.com/jetdog8808
+[twitter](https://twitter.com/jetdog8808)
 
-https://www.twitch.tv/jetdog8808
+[twitch](https://www.twitch.tv/jetdog8808)
+
 ----------
 ## About
 A compilation of prefabs and other useful items for vrchat users.
