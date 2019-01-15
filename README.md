@@ -4,7 +4,7 @@ Prefabs created by: jetdog8808
 
 Discord: jet#9481
 
-[twitter](https://twitter.com/jetdog8808)
+[twitter](https://twitter.com/jetdog8808_dev)
 
 [twitch](https://www.twitch.tv/jetdog8808)
 
