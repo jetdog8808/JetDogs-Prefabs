@@ -5,7 +5,7 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 unity files/++prefabs/
-WIP/
+box/
 
 # Visual Studio cache directory
 .vs/
@@ -38,3 +38,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 unity files/++prefabs.meta
+box.meta
