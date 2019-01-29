@@ -6241,7 +6241,9 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114464100275324656, guid: 18a84c44eee1f284cb7a2f2b71b454d7, type: 2}
+    - {fileID: 65278155905692422, guid: 18a84c44eee1f284cb7a2f2b71b454d7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 18a84c44eee1f284cb7a2f2b71b454d7, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &577019088 stripped
@@ -6348,6 +6350,7 @@ GameObject:
   - component: {fileID: 636296369}
   - component: {fileID: 636296368}
   - component: {fileID: 636296367}
+  - component: {fileID: 636296371}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -6448,6 +6451,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!65 &636296371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636296365}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &699945437
 Prefab:
   m_ObjectHideFlags: 0
@@ -7169,6 +7184,7 @@ GameObject:
   - component: {fileID: 800930918}
   - component: {fileID: 800930917}
   - component: {fileID: 800930916}
+  - component: {fileID: 800930920}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -7274,6 +7290,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!65 &800930920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 800930914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &806503764
 GameObject:
   m_ObjectHideFlags: 0
@@ -11725,7 +11753,9 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114464100275324656, guid: 18a84c44eee1f284cb7a2f2b71b454d7, type: 2}
+    - {fileID: 65278155905692422, guid: 18a84c44eee1f284cb7a2f2b71b454d7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 18a84c44eee1f284cb7a2f2b71b454d7, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &1750301882 stripped

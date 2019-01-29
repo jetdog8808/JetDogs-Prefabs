@@ -942,6 +942,7 @@ GameObject:
   - component: {fileID: 114021882148206092}
   - component: {fileID: 114965460285931364}
   - component: {fileID: 114532082658829202}
+  - component: {fileID: 65856681420975478}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -1252,6 +1253,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!65 &65856681420975478
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775390720109534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &82228930194144112
 AudioSource:
   m_ObjectHideFlags: 1

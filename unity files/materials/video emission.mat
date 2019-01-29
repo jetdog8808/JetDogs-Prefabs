@@ -9,7 +9,7 @@ Material:
   m_Name: video emission
   m_Shader: {fileID: 4800000, guid: 9788d723ed7eac946a9a599e4a6ba940, type: 3}
   m_ShaderKeywords: APPLY_GAMMA
-  m_LightmapFlags: 4
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -25,6 +25,7 @@ Material:
     m_Floats:
     - _ApplyGamma: 1
     - _DynamicEmissionLM: 0
+    - _Emission: 1
     - _EmissionLM: 1
     - _EmissionScale: 1
     m_Colors: []

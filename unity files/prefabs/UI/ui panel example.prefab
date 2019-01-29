@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 114290642154710414}
   - component: {fileID: 114146563977263408}
   - component: {fileID: 114429792344079684}
+  - component: {fileID: 65783496401474052}
   m_Layer: 12
   m_Name: Advanced Canvas
   m_TagString: Untagged
@@ -184,6 +185,7 @@ GameObject:
   - component: {fileID: 114776899780227964}
   - component: {fileID: 114901563574753022}
   - component: {fileID: 114457377755834402}
+  - component: {fileID: 65154097866796712}
   m_Layer: 0
   m_Name: basic Canvas
   m_TagString: Untagged
@@ -853,6 +855,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -868,6 +871,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -883,6 +887,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884116060469346}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65154097866796712
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1222415194591348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65783496401474052
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093239936923444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &82619530288940750
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1015,6 +1043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowNonOwnerControl: 1
   VideoSearchRoot: youtube.com
+  MaxStreamQuality: 720
   Videos:
   - Source: 1
     AspectRatio: 0
@@ -4518,8 +4547,10 @@ VideoPlayer:
   m_Enabled: 1
   m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
   m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 3

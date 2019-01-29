@@ -25,5 +25,5 @@ Material:
     m_Floats:
     - _APPLY_GAMMA: 1
     - _StereoEnabled: 0
-    - _distance: 12
+    - _distance: 24
     m_Colors: []

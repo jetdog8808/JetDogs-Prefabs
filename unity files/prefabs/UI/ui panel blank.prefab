@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114764330098395752}
   - component: {fileID: 114223860347983034}
   - component: {fileID: 114464100275324656}
+  - component: {fileID: 65278155905692422}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -76,6 +77,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65278155905692422
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336312517523152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114223860347983034
 MonoBehaviour:
   m_ObjectHideFlags: 1

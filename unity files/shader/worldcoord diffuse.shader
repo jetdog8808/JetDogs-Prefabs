@@ -449,5 +449,5 @@ Shader "JetDog's Prefabs/worldcoord diffuse" {
         }
     }
     FallBack "Diffuse"
-    CustomEditor "ShaderForgeMaterialInspector"
+    //CustomEditor "ShaderForgeMaterialInspector"
 }

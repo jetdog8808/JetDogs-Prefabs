@@ -1787,6 +1787,7 @@ GameObject:
   - component: {fileID: 114381858078348500}
   - component: {fileID: 114453858073350896}
   - component: {fileID: 114802171760962204}
+  - component: {fileID: 65991346719754338}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -1878,6 +1879,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1121790869593860}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65991346719754338
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1999798627927170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &82634063405185290
 AudioSource:
   m_ObjectHideFlags: 1
