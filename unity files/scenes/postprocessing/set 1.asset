@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: set 1
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: 114190550155282512}
---- !u!114 &114190550155282512
+  - {fileID: 114763184806697914}
+--- !u!114 &114763184806697914
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
@@ -29,7 +29,7 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   gradingMode:
-    overrideState: 1
+    overrideState: 0
     value: 1
   externalLut:
     overrideState: 0
@@ -64,20 +64,20 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 1
+    overrideState: 0
     value: 0
   tint:
-    overrideState: 1
-    value: 100
-  colorFilter:
     overrideState: 0
-    value: {r: 1, g: 1, b: 1, a: 1}
+    value: 0
+  colorFilter:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
   hueShift:
     overrideState: 0
     value: 0
   saturation:
     overrideState: 0
-    value: 0
+    value: -100
   brightness:
     overrideState: 0
     value: 0
@@ -86,34 +86,34 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 0
-    value: 0
+    value: -100
   mixerRedOutRedIn:
-    overrideState: 1
-    value: -200
+    overrideState: 0
+    value: 100
   mixerRedOutGreenIn:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mixerRedOutBlueIn:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mixerGreenOutRedIn:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mixerGreenOutGreenIn:
-    overrideState: 1
-    value: -200
+    overrideState: 0
+    value: 100
   mixerGreenOutBlueIn:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mixerBlueOutRedIn:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mixerBlueOutGreenIn:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mixerBlueOutBlueIn:
-    overrideState: 1
-    value: -200
+    overrideState: 0
+    value: 100
   lift:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}
