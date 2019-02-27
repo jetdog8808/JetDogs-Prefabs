@@ -2,7 +2,7 @@
 
 Prefabs created by: jetdog8808
 
-Discord: jet#9481
+[Discord](https://discord.gg/qksGqMD)
 
 [twitter](https://twitter.com/jetdog8808_dev)
 
