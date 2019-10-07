@@ -570,7 +570,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1965314374664902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.07, y: 1, z: 3.46}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224046159774395090}
@@ -670,9 +670,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114035758596417278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -795,6 +792,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 2
     BroadcastType: 2
@@ -810,6 +808,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 1
@@ -821,6 +820,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 2
@@ -832,6 +832,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 3
@@ -843,6 +844,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 4
@@ -854,6 +856,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 5
@@ -865,6 +868,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 6
@@ -876,6 +880,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 7
@@ -887,6 +892,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 8
@@ -898,6 +904,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 9
@@ -909,6 +916,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: all off
     Others: []
     Key: 0
@@ -989,6 +997,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 2
     BroadcastType: 2
@@ -1079,9 +1088,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114079025985989894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1220,6 +1226,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -1235,6 +1242,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1404,6 +1412,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -1419,6 +1428,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1484,9 +1494,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114162367742363852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1559,9 +1566,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114199661593239254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1574,9 +1578,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114211283047258068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1755,9 +1756,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114283922807580676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1770,9 +1768,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114307459543365926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1807,6 +1802,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -1822,6 +1818,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1958,6 +1955,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -1973,6 +1971,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2017,6 +2016,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -2032,6 +2032,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2138,6 +2139,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -2153,6 +2155,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2297,9 +2300,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114592471750494830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2312,9 +2312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114600779505509332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2366,6 +2363,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -2381,6 +2379,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2419,9 +2418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114640624727651974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2506,6 +2502,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -2521,6 +2518,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2611,9 +2609,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114746057331298352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2632,6 +2627,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -2647,6 +2643,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2685,9 +2682,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114769757927610046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2706,6 +2700,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -2721,6 +2716,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2902,6 +2898,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -2917,6 +2914,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3102,6 +3100,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -3117,6 +3116,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 1
@@ -3128,6 +3128,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 2
@@ -3139,6 +3140,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 3
@@ -3150,6 +3152,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 4
@@ -3161,6 +3164,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 5
@@ -3172,6 +3176,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 6
@@ -3183,6 +3188,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 7
@@ -3194,6 +3200,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 8
@@ -3205,6 +3212,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: 9
@@ -3216,6 +3224,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 2
       ParameterString: enter
@@ -3227,6 +3236,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1965314374664902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3371,9 +3381,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114980196628576330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3419,9 +3426,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!222 &222021818054702600
 CanvasRenderer:
   m_ObjectHideFlags: 1

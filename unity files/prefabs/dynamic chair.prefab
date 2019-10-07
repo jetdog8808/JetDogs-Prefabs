@@ -172,7 +172,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1598748866149332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4316828476244474}
@@ -469,13 +469,14 @@ MonoBehaviour:
   m_Script: {fileID: 394927577, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomentumTransferMethod: 0
   DisallowTheft: 0
-  physicalRoot: {fileID: 0}
   ExactGun: {fileID: 0}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 0
   AutoHold: 0
+  InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
   UseDownEventName: 
@@ -489,10 +490,6 @@ MonoBehaviour:
   currentLocalPlayer: {fileID: 0}
   pickupable: 1
   proximity: 2
-  originalKinematic: 0
-  originalGravity: 1
-  originalTrigger: 0
-  originalParent: {fileID: 0}
 --- !u!114 &114104948691536628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -512,6 +509,18 @@ MonoBehaviour:
   stationEnterPlayerLocation: {fileID: 4605788698905178}
   stationExitPlayerLocation: {fileID: 4868636224179226}
   controlsObject: {fileID: 0}
+  OnRemotePlayerEnterStation:
+    TriggerObject: {fileID: 0}
+    CustomName: 
+  OnLocalPlayerEnterStation:
+    TriggerObject: {fileID: 0}
+    CustomName: 
+  OnRemotePlayerExitStation:
+    TriggerObject: {fileID: 0}
+    CustomName: 
+  OnLocalPlayerExitStation:
+    TriggerObject: {fileID: 0}
+    CustomName: 
 --- !u!114 &114148142386108080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -524,9 +533,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114528792472414424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -545,6 +551,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -560,6 +567,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1113569275308436}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -611,9 +619,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114974048470781004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -632,6 +637,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 0
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 24
     BroadcastType: 7
@@ -647,6 +653,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1598748866149332}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: EnableKinematic
       EventType: 21
       ParameterString: UnityEngine.BoxCollider
@@ -658,6 +665,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1889729573588090}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -702,6 +710,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1598748866149332}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: EnableKinematic
       EventType: 21
       ParameterString: UnityEngine.BoxCollider
@@ -713,6 +722,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1889729573588090}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0

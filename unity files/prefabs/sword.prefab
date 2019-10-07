@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1409306577870442}
   m_LocalRotation: {x: 0.7071066, y: -0, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 4, y: 0.872, z: 2.254}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4257733913220092}
@@ -120,6 +120,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -135,6 +136,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -152,6 +154,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -167,6 +170,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -213,9 +217,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 0
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 1
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 4bd13e6423f465d4b8adaca89a452eab, type: 3}
 --- !u!65 &65125157826999268
@@ -260,6 +264,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 0
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 15
     BroadcastType: 7
@@ -275,6 +280,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1588558983102106}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -315,6 +321,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1588558983102106}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -353,9 +360,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114458873841377364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -367,13 +371,14 @@ MonoBehaviour:
   m_Script: {fileID: 394927577, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomentumTransferMethod: 0
   DisallowTheft: 1
-  physicalRoot: {fileID: 0}
   ExactGun: {fileID: 4257733913220092}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 2
   AutoHold: 1
+  InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
   UseDownEventName: 
@@ -387,10 +392,6 @@ MonoBehaviour:
   currentLocalPlayer: {fileID: 0}
   pickupable: 1
   proximity: 2
-  originalKinematic: 0
-  originalGravity: 1
-  originalTrigger: 0
-  originalParent: {fileID: 0}
 --- !u!114 &114588872777789232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -403,9 +404,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114753377942248790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -424,6 +422,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 11
     BroadcastType: 4
@@ -439,6 +438,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 0}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -478,5 +478,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SynchronizePhysics: 1
   AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1

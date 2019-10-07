@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 4534967663130314}
   - component: {fileID: 82016424742137304}
   - component: {fileID: 114681412998201596}
+  - component: {fileID: 114385660710668638}
   m_Layer: 0
   m_Name: audio
   m_TagString: Untagged
@@ -937,7 +938,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374728465791686}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1190,7 +1191,7 @@ MeshCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272293084803766}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e52fb17f9b1e7fd48b8955f1391d3688, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1404,6 +1405,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -1419,6 +1421,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1873174252310806}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 21
       ParameterString: UnityEngine.MeshRenderer
@@ -1430,6 +1433,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1839375500541710}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1472,9 +1476,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114022565132777188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1487,9 +1488,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114089478027001742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1836,9 +1834,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114280665223284416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2160,6 +2155,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -2175,6 +2171,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1885382584203902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2219,6 +2216,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 5
@@ -2234,6 +2232,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1092280859560284}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2260,6 +2259,23 @@ MonoBehaviour:
     MidiChannel: 0
     MidiNote: 0
     OscAddr: 
+--- !u!114 &114385660710668638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340472077467042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1125178822, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 10
+  Far: 80
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 0
 --- !u!114 &114404919514803104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2417,6 +2433,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -2432,6 +2449,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1885382584203902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2589,9 +2607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114515693516667140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2810,6 +2825,12 @@ MonoBehaviour:
   - Source: 1
     VideoClip: {fileID: 0}
     PlaybackSpeed: 1
+    URL: https://www.youtube.com/watch?v=q3DQCNRQHT4
+    SyncType: 0
+    SyncMinutes: 0
+  - Source: 1
+    VideoClip: {fileID: 0}
+    PlaybackSpeed: 1
     URL: https://www.youtube.com/watch?v=-xNN-bJQ4vI
     SyncType: 0
     SyncMinutes: 0
@@ -2825,9 +2846,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114659312482697918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3075,6 +3093,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -3090,6 +3109,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1885382584203902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3155,9 +3175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114766204858545252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3209,6 +3226,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -3224,6 +3242,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1873174252310806}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 21
       ParameterString: UnityEngine.MeshRenderer
@@ -3235,6 +3254,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1839375500541710}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3319,9 +3339,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114870660975718338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3373,6 +3390,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -3388,6 +3406,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1885382584203902}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0

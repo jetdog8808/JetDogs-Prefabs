@@ -900,7 +900,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1443847593174990}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -12.466, y: 1.435, z: -3.085}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4231298932625610}
@@ -959,6 +959,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -974,6 +975,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -991,6 +993,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1006,6 +1009,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1106,6 +1110,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -1122,6 +1127,7 @@ MonoBehaviour:
       - {fileID: 1768663299634480}
       - {fileID: 1123506742589594}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1159,13 +1165,14 @@ MonoBehaviour:
   m_Script: {fileID: 394927577, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomentumTransferMethod: 0
   DisallowTheft: 0
-  physicalRoot: {fileID: 0}
   ExactGun: {fileID: 0}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 0
   AutoHold: 1
+  InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
   UseDownEventName: 
@@ -1179,10 +1186,6 @@ MonoBehaviour:
   currentLocalPlayer: {fileID: 0}
   pickupable: 1
   proximity: 2
-  originalKinematic: 0
-  originalGravity: 1
-  originalTrigger: 0
-  originalParent: {fileID: 0}
 --- !u!114 &114031275561409876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1367,6 +1370,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -1383,6 +1387,7 @@ MonoBehaviour:
       - {fileID: 1786950307766766}
       - {fileID: 1583733870586780}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 10
       ParameterString: 
@@ -1397,6 +1402,7 @@ MonoBehaviour:
       - {fileID: 1123506742589594}
       - {fileID: 1779199357831436}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1466,9 +1472,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114215336537359070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1508,9 +1511,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114227388883200108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1952,6 +1952,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 8
     BroadcastType: 4
@@ -1968,6 +1969,7 @@ MonoBehaviour:
       - {fileID: 1786950307766766}
       - {fileID: 1537460174197910}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 10
       ParameterString: 
@@ -1979,6 +1981,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1583733870586780}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 10
       ParameterString: 
@@ -1992,6 +1995,7 @@ MonoBehaviour:
       - {fileID: 1123506742589594}
       - {fileID: 1779199357831436}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2040,6 +2044,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1443847593174990}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2080,6 +2085,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1443847593174990}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2203,6 +2209,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers: []
 --- !u!114 &114402984685587402
 MonoBehaviour:
@@ -2301,6 +2308,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -2317,6 +2325,7 @@ MonoBehaviour:
       - {fileID: 1768663299634480}
       - {fileID: 1123506742589594}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2361,6 +2370,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -2377,6 +2387,7 @@ MonoBehaviour:
       - {fileID: 1583733870586780}
       - {fileID: 1768663299634480}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2473,6 +2484,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -2489,6 +2501,7 @@ MonoBehaviour:
       - {fileID: 1123506742589594}
       - {fileID: 1779199357831436}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2582,8 +2595,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SynchronizePhysics: 1
   AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
 --- !u!114 &114571678251639756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2673,9 +2684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114604003574852418
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2688,9 +2696,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114614959854403400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2924,6 +2929,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -2940,6 +2946,7 @@ MonoBehaviour:
       - {fileID: 1583733870586780}
       - {fileID: 1768663299634480}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3308,6 +3315,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -3324,6 +3332,7 @@ MonoBehaviour:
       - {fileID: 1123506742589594}
       - {fileID: 1779199357831436}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3480,9 +3489,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114948810865483428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3547,9 +3553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114970190960654882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3638,9 +3641,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114986554312602264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3653,9 +3653,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114996935801746306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3668,9 +3665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!135 &135106463660658088
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -4074,7 +4068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000018119812, y: 0.0000059604645}
+  m_AnchoredPosition: {x: 0.000019073486, y: 0.0000076293945}
   m_SizeDelta: {x: -114, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224289811394190226
@@ -4133,7 +4127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000018119812, y: 0.0000059604645}
+  m_AnchoredPosition: {x: 0.000019073486, y: 0.0000076293945}
   m_SizeDelta: {x: -114, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224413305704473188
@@ -4716,7 +4710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000018119812, y: 0.0000059604645}
+  m_AnchoredPosition: {x: 0.000019073486, y: 0.0000076293945}
   m_SizeDelta: {x: -114, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224917888204176650

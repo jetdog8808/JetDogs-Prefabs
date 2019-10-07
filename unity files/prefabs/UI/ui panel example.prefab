@@ -536,6 +536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4118690473729358}
   - component: {fileID: 82619530288940750}
+  - component: {fileID: 114820446220753118}
   m_Layer: 0
   m_Name: Sound
   m_TagString: Untagged
@@ -822,8 +823,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1934536214526236}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224043991043611572}
@@ -1281,9 +1282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114110347149319528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1296,9 +1294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114113037994894588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1667,9 +1662,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114282629795542870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1821,6 +1813,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 0
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -1836,6 +1829,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1884116060469346}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0
@@ -2152,6 +2146,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 0
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -2167,6 +2162,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1841298916822278}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0
@@ -2373,6 +2369,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -2388,6 +2385,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1884116060469346}
       ParameterBytes: 0001000000ffffffff01000000000000001001000000010000000808020000000b
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0
@@ -2525,6 +2523,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 0
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 0
     BroadcastType: 4
@@ -2540,6 +2539,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1213967180276838}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0
@@ -2605,9 +2605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114596930189673370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2689,6 +2686,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -2704,6 +2702,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1884116060469346}
       ParameterBytes: 0001000000ffffffff01000000000000001001000000010000000808010000000b
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0
@@ -2769,9 +2768,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114733545344921690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2904,6 +2900,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 0
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -2919,6 +2916,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1884116060469346}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0
@@ -2957,9 +2955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114776729461012030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2972,9 +2967,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114776899780227964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3041,6 +3033,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 0
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -3056,6 +3049,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1884116060469346}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0
@@ -3082,6 +3076,23 @@ MonoBehaviour:
     MidiChannel: 0
     MidiNote: 0
     OscAddr: 
+--- !u!114 &114820446220753118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1812259615493140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1125178822, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 10
+  Far: 80
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 0
 --- !u!114 &114856095930230324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3127,6 +3138,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -3142,6 +3154,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1884116060469346}
       ParameterBytes: 0001000000ffffffff01000000000000001001000000010000000808000000000b
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0
@@ -3248,9 +3261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114901563574753022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3279,9 +3289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114939308826022982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3379,6 +3386,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 0
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 7
@@ -3394,6 +3402,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1884116060469346}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: example
     Others: []
     Key: 0

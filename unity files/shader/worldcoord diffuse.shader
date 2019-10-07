@@ -1,14 +1,14 @@
 // Shader created with Shader Forge v1.38 
-// Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
+// Shader Forge (c) Freya Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-6343-OUT,spec-358-OUT,gloss-1813-OUT,normal-20-OUT,emission-513-OUT;n:type:ShaderForge.SFN_Multiply,id:6343,x:31977,y:32745,varname:node_6343,prsc:2|A-6885-OUT,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:31808,y:32888,ptovrint:False,ptlb:Color,ptin:_Color,varname:_Color,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31089,y:32613,varname:_MainTex,prsc:2,ntxv:0,isnm:False|UVIN-5512-OUT,TEX-7412-TEX;n:type:ShaderForge.SFN_Slider,id:358,x:32250,y:32780,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32250,y:32882,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_FragmentPosition,id:2405,x:30101,y:32638,varname:node_2405,prsc:2;n:type:ShaderForge.SFN_Append,id:5512,x:30666,y:32619,varname:node_5512,prsc:2|A-184-OUT,B-6315-OUT;n:type:ShaderForge.SFN_Append,id:5904,x:30666,y:32748,varname:node_5904,prsc:2|A-6315-OUT,B-1760-OUT;n:type:ShaderForge.SFN_Append,id:9649,x:30666,y:32892,varname:node_9649,prsc:2|A-1760-OUT,B-184-OUT;n:type:ShaderForge.SFN_ChannelBlend,id:6885,x:31538,y:32729,varname:node_6885,prsc:2,chbt:0|M-5704-OUT,R-7736-RGB,G-4452-RGB,B-590-RGB;n:type:ShaderForge.SFN_NormalVector,id:7609,x:30666,y:32421,prsc:2,pt:False;n:type:ShaderForge.SFN_Abs,id:3406,x:30850,y:32421,varname:node_3406,prsc:2|IN-7609-OUT;n:type:ShaderForge.SFN_Multiply,id:5704,x:31124,y:32422,varname:node_5704,prsc:2|A-3406-OUT,B-3406-OUT;n:type:ShaderForge.SFN_Tex2dAsset,id:7412,x:30666,y:33054,ptovrint:False,ptlb:texture,ptin:_texture,varname:node_7412,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:4452,x:31089,y:32769,varname:node_4452,prsc:2,ntxv:0,isnm:False|UVIN-5904-OUT,TEX-7412-TEX;n:type:ShaderForge.SFN_Tex2d,id:590,x:31089,y:32910,varname:node_590,prsc:2,ntxv:0,isnm:False|UVIN-9649-OUT,TEX-7412-TEX;n:type:ShaderForge.SFN_Tex2d,id:1732,x:31099,y:33186,varname:node_1732,prsc:2,ntxv:0,isnm:False|UVIN-5512-OUT,TEX-970-TEX;n:type:ShaderForge.SFN_Tex2d,id:133,x:31111,y:33361,varname:node_133,prsc:2,ntxv:0,isnm:False|UVIN-5904-OUT,TEX-970-TEX;n:type:ShaderForge.SFN_Tex2d,id:2141,x:31111,y:33522,varname:node_2141,prsc:2,ntxv:3,isnm:False|UVIN-9649-OUT,TEX-970-TEX;n:type:ShaderForge.SFN_Tex2dAsset,id:970,x:30665,y:33335,ptovrint:False,ptlb:normal map,ptin:_normalmap,varname:node_970,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True;n:type:ShaderForge.SFN_ChannelBlend,id:3984,x:31535,y:33099,varname:node_3984,prsc:2,chbt:0|M-5704-OUT,R-1732-RGB,G-133-RGB,B-2141-RGB;n:type:ShaderForge.SFN_Multiply,id:1362,x:32250,y:33097,varname:node_1362,prsc:2|A-8304-OUT,B-1412-OUT;n:type:ShaderForge.SFN_ValueProperty,id:1412,x:32059,y:33264,ptovrint:False,ptlb:normal intensity,ptin:_normalintensity,varname:node_1412,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_ComponentMask,id:8304,x:32059,y:33097,varname:node_8304,prsc:2,cc1:0,cc2:1,cc3:-1,cc4:-1|IN-3984-OUT;n:type:ShaderForge.SFN_Vector1,id:5012,x:32059,y:33337,varname:node_5012,prsc:2,v1:1;n:type:ShaderForge.SFN_Append,id:20,x:32427,y:33097,varname:node_20,prsc:2|A-1362-OUT,B-5012-OUT;n:type:ShaderForge.SFN_Vector4Property,id:1300,x:30101,y:32797,ptovrint:False,ptlb:tile size,ptin:_tilesize,varname:node_1300,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1,v2:1,v3:1,v4:0;n:type:ShaderForge.SFN_Multiply,id:1760,x:30395,y:32627,varname:node_1760,prsc:2|A-2405-X,B-1300-X;n:type:ShaderForge.SFN_Multiply,id:184,x:30395,y:32745,varname:node_184,prsc:2|A-2405-Y,B-1300-Y;n:type:ShaderForge.SFN_Multiply,id:6315,x:30395,y:32864,varname:node_6315,prsc:2|A-2405-Z,B-1300-Z;n:type:ShaderForge.SFN_SwitchProperty,id:513,x:32389,y:32604,ptovrint:False,ptlb:emissive,ptin:_emissive,varname:node_513,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,on:False|A-8490-OUT,B-6343-OUT;n:type:ShaderForge.SFN_Vector1,id:8490,x:32136,y:32588,varname:node_8490,prsc:2,v1:0;proporder:7412-1300-6665-513-358-1813-970-1412;pass:END;sub:END;*/
+/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:False,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:False,rfrpn:,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-6343-OUT,spec-358-OUT,gloss-1813-OUT,normal-20-OUT,emission-513-OUT;n:type:ShaderForge.SFN_Multiply,id:6343,x:31977,y:32745,varname:node_6343,prsc:2|A-6885-OUT,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:31808,y:32888,ptovrint:False,ptlb:Color,ptin:_Color,varname:_Color,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31089,y:32613,varname:_MainTex,prsc:2,ntxv:0,isnm:False|UVIN-5512-OUT,TEX-7412-TEX;n:type:ShaderForge.SFN_Slider,id:358,x:32250,y:32780,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:_Metallic,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32250,y:32919,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Gloss,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_FragmentPosition,id:2405,x:30101,y:32638,varname:node_2405,prsc:2;n:type:ShaderForge.SFN_Append,id:5512,x:30666,y:32619,varname:node_5512,prsc:2|A-184-OUT,B-6315-OUT;n:type:ShaderForge.SFN_Append,id:5904,x:30666,y:32748,varname:node_5904,prsc:2|A-6315-OUT,B-1760-OUT;n:type:ShaderForge.SFN_Append,id:9649,x:30666,y:32892,varname:node_9649,prsc:2|A-1760-OUT,B-184-OUT;n:type:ShaderForge.SFN_ChannelBlend,id:6885,x:31538,y:32729,varname:node_6885,prsc:2,chbt:0|M-5704-OUT,R-7736-RGB,G-4452-RGB,B-590-RGB;n:type:ShaderForge.SFN_NormalVector,id:7609,x:30666,y:32421,prsc:2,pt:False;n:type:ShaderForge.SFN_Abs,id:3406,x:30850,y:32421,varname:node_3406,prsc:2|IN-7609-OUT;n:type:ShaderForge.SFN_Multiply,id:5704,x:31124,y:32422,varname:node_5704,prsc:2|A-3406-OUT,B-3406-OUT;n:type:ShaderForge.SFN_Tex2dAsset,id:7412,x:30666,y:33054,ptovrint:False,ptlb:texture,ptin:_texture,varname:_texture,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:4452,x:31089,y:32769,varname:node_4452,prsc:2,ntxv:0,isnm:False|UVIN-5904-OUT,TEX-7412-TEX;n:type:ShaderForge.SFN_Tex2d,id:590,x:31089,y:32910,varname:node_590,prsc:2,ntxv:0,isnm:False|UVIN-9649-OUT,TEX-7412-TEX;n:type:ShaderForge.SFN_Tex2d,id:1732,x:31099,y:33186,varname:node_1732,prsc:2,ntxv:0,isnm:False|UVIN-5512-OUT,TEX-970-TEX;n:type:ShaderForge.SFN_Tex2d,id:133,x:31111,y:33361,varname:node_133,prsc:2,ntxv:0,isnm:False|UVIN-5904-OUT,TEX-970-TEX;n:type:ShaderForge.SFN_Tex2d,id:2141,x:31111,y:33522,varname:node_2141,prsc:2,ntxv:3,isnm:False|UVIN-9649-OUT,TEX-970-TEX;n:type:ShaderForge.SFN_Tex2dAsset,id:970,x:30665,y:33335,ptovrint:False,ptlb:normal map,ptin:_normalmap,varname:_normalmap,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True;n:type:ShaderForge.SFN_ChannelBlend,id:3984,x:31535,y:33099,varname:node_3984,prsc:2,chbt:0|M-5704-OUT,R-1732-RGB,G-133-RGB,B-2141-RGB;n:type:ShaderForge.SFN_Multiply,id:1362,x:32250,y:33097,varname:node_1362,prsc:2|A-8304-OUT,B-1412-OUT;n:type:ShaderForge.SFN_ValueProperty,id:1412,x:32059,y:33264,ptovrint:False,ptlb:normal intensity,ptin:_normalintensity,varname:_normalintensity,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_ComponentMask,id:8304,x:32059,y:33097,varname:node_8304,prsc:2,cc1:0,cc2:1,cc3:-1,cc4:-1|IN-3984-OUT;n:type:ShaderForge.SFN_Vector1,id:5012,x:32059,y:33337,varname:node_5012,prsc:2,v1:1;n:type:ShaderForge.SFN_Append,id:20,x:32427,y:33097,varname:node_20,prsc:2|A-1362-OUT,B-5012-OUT;n:type:ShaderForge.SFN_Vector4Property,id:1300,x:30101,y:32797,ptovrint:False,ptlb:tile size,ptin:_tilesize,varname:_tilesize,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1,v2:1,v3:1,v4:0;n:type:ShaderForge.SFN_Multiply,id:1760,x:30395,y:32627,varname:node_1760,prsc:2|A-2405-X,B-1300-X;n:type:ShaderForge.SFN_Multiply,id:184,x:30395,y:32745,varname:node_184,prsc:2|A-2405-Y,B-1300-Y;n:type:ShaderForge.SFN_Multiply,id:6315,x:30395,y:32864,varname:node_6315,prsc:2|A-2405-Z,B-1300-Z;n:type:ShaderForge.SFN_SwitchProperty,id:513,x:32384,y:32588,ptovrint:True,ptlb:emissive,ptin:_EMISSION,varname:_EMISSION,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,on:False|A-8490-OUT,B-6343-OUT;n:type:ShaderForge.SFN_Vector1,id:8490,x:32136,y:32588,varname:node_8490,prsc:2,v1:0;n:type:ShaderForge.SFN_Slider,id:3730,x:32128,y:34064,ptovrint:False,ptlb:node_3947_copy_copy_copy,ptin:_node_3947_copy_copy_copy,varname:_node_3947_copy_copy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-3,cur:0,max:3;n:type:ShaderForge.SFN_Slider,id:8047,x:32128,y:34064,ptovrint:False,ptlb:node_3947_copy_copy_copy_copy,ptin:_node_3947_copy_copy_copy_copy,varname:_node_3947_copy_copy_copy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-3,cur:0,max:3;n:type:ShaderForge.SFN_Slider,id:4687,x:32192,y:34128,ptovrint:False,ptlb:node_3947_copy_copy_copy_copy,ptin:_node_3947_copy_copy_copy_copy,varname:_node_3947_copy_copy_copy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-3,cur:0,max:3;n:type:ShaderForge.SFN_Slider,id:6214,x:32128,y:34064,ptovrint:False,ptlb:node_3947_copy_copy_copy_copy,ptin:_node_3947_copy_copy_copy_copy,varname:_node_3947_copy_copy_copy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-3,cur:0,max:3;n:type:ShaderForge.SFN_Slider,id:9022,x:32192,y:34128,ptovrint:False,ptlb:node_3947_copy_copy_copy_copy_copy,ptin:_node_3947_copy_copy_copy_copy_copy,varname:_node_3947_copy_copy_copy_copy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-3,cur:0,max:3;n:type:ShaderForge.SFN_Slider,id:5359,x:32256,y:34192,ptovrint:False,ptlb:node_3947_copy_copy_copy_copy_copy,ptin:_node_3947_copy_copy_copy_copy_copy,varname:_node_3947_copy_copy_copy_copy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-3,cur:0,max:3;proporder:7412-1300-6665-513-358-1813-970-1412;pass:END;sub:END;*/
 
 Shader "JetDog's Prefabs/worldcoord diffuse" {
     Properties {
         _texture ("texture", 2D) = "white" {}
         _tilesize ("tile size", Vector) = (1,1,1,0)
         _Color ("Color", Color) = (1,1,1,1)
-        [MaterialToggle] _emissive ("emissive", Float ) = 0
+        [MaterialToggle] _EMISSION ("emissive", Float ) = 0
         _Metallic ("Metallic", Range(0, 1)) = 0
         _Gloss ("Gloss", Range(0, 1)) = 1
         _normalmap ("normal map", 2D) = "bump" {}
@@ -50,7 +50,7 @@ Shader "JetDog's Prefabs/worldcoord diffuse" {
             uniform sampler2D _normalmap; uniform float4 _normalmap_ST;
             uniform float _normalintensity;
             uniform float4 _tilesize;
-            uniform fixed _emissive;
+            uniform fixed _EMISSION;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -213,7 +213,7 @@ Shader "JetDog's Prefabs/worldcoord diffuse" {
                 indirectDiffuse += gi.indirect.diffuse;
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 ////// Emissive:
-                float3 emissive = lerp( 0.0, node_6343, _emissive );
+                float3 emissive = lerp( 0.0, node_6343, _EMISSION );
 /// Final Color:
                 float3 finalColor = diffuse + specular + emissive;
                 fixed4 finalRGBA = fixed4(finalColor,1);
@@ -255,7 +255,7 @@ Shader "JetDog's Prefabs/worldcoord diffuse" {
             uniform sampler2D _normalmap; uniform float4 _normalmap_ST;
             uniform float _normalintensity;
             uniform float4 _tilesize;
-            uniform fixed _emissive;
+            uniform fixed _EMISSION;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -361,93 +361,7 @@ Shader "JetDog's Prefabs/worldcoord diffuse" {
             }
             ENDCG
         }
-        Pass {
-            Name "Meta"
-            Tags {
-                "LightMode"="Meta"
-            }
-            Cull Off
-            
-            CGPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
-            #define UNITY_PASS_META 1
-            #define SHOULD_SAMPLE_SH ( defined (LIGHTMAP_OFF) && defined(DYNAMICLIGHTMAP_OFF) )
-            #define _GLOSSYENV 1
-            #include "UnityCG.cginc"
-            #include "Lighting.cginc"
-            #include "UnityPBSLighting.cginc"
-            #include "UnityStandardBRDF.cginc"
-            #include "UnityMetaPass.cginc"
-            #pragma fragmentoption ARB_precision_hint_fastest
-            #pragma multi_compile_shadowcaster
-            #pragma multi_compile LIGHTMAP_OFF LIGHTMAP_ON
-            #pragma multi_compile DIRLIGHTMAP_OFF DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE
-            #pragma multi_compile DYNAMICLIGHTMAP_OFF DYNAMICLIGHTMAP_ON
-            #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
-            #pragma target 3.0
-            uniform float4 _Color;
-            uniform float _Metallic;
-            uniform float _Gloss;
-            uniform sampler2D _texture; uniform float4 _texture_ST;
-            uniform float4 _tilesize;
-            uniform fixed _emissive;
-            struct VertexInput {
-                float4 vertex : POSITION;
-                float3 normal : NORMAL;
-                float2 texcoord1 : TEXCOORD1;
-                float2 texcoord2 : TEXCOORD2;
-            };
-            struct VertexOutput {
-                float4 pos : SV_POSITION;
-                float2 uv1 : TEXCOORD0;
-                float2 uv2 : TEXCOORD1;
-                float4 posWorld : TEXCOORD2;
-                float3 normalDir : TEXCOORD3;
-            };
-            VertexOutput vert (VertexInput v) {
-                VertexOutput o = (VertexOutput)0;
-                o.uv1 = v.texcoord1;
-                o.uv2 = v.texcoord2;
-                o.normalDir = UnityObjectToWorldNormal(v.normal);
-                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
-                o.pos = UnityMetaVertexPosition(v.vertex, v.texcoord1.xy, v.texcoord2.xy, unity_LightmapST, unity_DynamicLightmapST );
-                return o;
-            }
-            float4 frag(VertexOutput i) : SV_Target {
-                i.normalDir = normalize(i.normalDir);
-                float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 normalDirection = i.normalDir;
-                UnityMetaInput o;
-                UNITY_INITIALIZE_OUTPUT( UnityMetaInput, o );
-                
-                float3 node_3406 = abs(i.normalDir);
-                float3 node_5704 = (node_3406*node_3406);
-                float node_184 = (i.posWorld.g*_tilesize.g);
-                float node_6315 = (i.posWorld.b*_tilesize.b);
-                float2 node_5512 = float2(node_184,node_6315);
-                float4 _MainTex = tex2D(_texture,TRANSFORM_TEX(node_5512, _texture));
-                float node_1760 = (i.posWorld.r*_tilesize.r);
-                float2 node_5904 = float2(node_6315,node_1760);
-                float4 node_4452 = tex2D(_texture,TRANSFORM_TEX(node_5904, _texture));
-                float2 node_9649 = float2(node_1760,node_184);
-                float4 node_590 = tex2D(_texture,TRANSFORM_TEX(node_9649, _texture));
-                float3 node_6343 = ((node_5704.r*_MainTex.rgb + node_5704.g*node_4452.rgb + node_5704.b*node_590.rgb)*_Color.rgb);
-                o.Emission = lerp( 0.0, node_6343, _emissive );
-                
-                float3 diffColor = node_6343;
-                float specularMonochrome;
-                float3 specColor;
-                diffColor = DiffuseAndSpecularFromMetallic( diffColor, _Metallic, specColor, specularMonochrome );
-                float roughness = 1.0 - _Gloss;
-                o.Albedo = diffColor + specColor * roughness * roughness * 0.5;
-                
-                return UnityMetaFragment( o );
-            }
-            ENDCG
-        }
     }
     FallBack "Diffuse"
-    //CustomEditor "ShaderForgeMaterialInspector"
+    CustomEditor "ShaderForgeMaterialInspector"
 }

@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 43fda09a158537b468b993daa039b4f7
-timeCreated: 1532994423
-licenseType: Free
 ShaderImporter:
+  externalObjects: {}
   defaultTextures:
   - _numbers: {fileID: 2800000, guid: 6dd6e4c7a383b43429cbd6c5c280d99f, type: 3}
   - _alpha: {fileID: 2800000, guid: 19fd606aab8a0a74289981c11c060fd9, type: 3}

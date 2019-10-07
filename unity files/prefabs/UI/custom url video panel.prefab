@@ -86,6 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4737010739690038}
   - component: {fileID: 82181558147680858}
+  - component: {fileID: 114898729078062244}
   m_Layer: 0
   m_Name: Sound
   m_TagString: Untagged
@@ -830,8 +831,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1789621855672154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4804313535743340}
@@ -1160,9 +1161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114115463226577392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1251,9 +1249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114170152368275916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1446,6 +1441,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -1461,6 +1457,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1475252449682926}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1638,6 +1635,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -1653,6 +1651,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1475252449682926}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1697,6 +1696,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -1712,6 +1712,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1475252449682926}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1784,9 +1785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114405888565097528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1857,6 +1855,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -1872,6 +1871,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1475252449682926}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -1916,6 +1916,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -1931,6 +1932,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1789621855672154}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: Play
       EventType: 14
       ParameterString: Clear
@@ -1942,6 +1944,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1475252449682926}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: Stop
       EventType: 14
       ParameterString: Stop
@@ -1953,6 +1956,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1475252449682926}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: clear
     Others: []
     Key: 0
@@ -2509,9 +2513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114704795013083750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2617,47 +2618,8 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
-  Triggers:
-  - TriggerType: 5
-    BroadcastType: 8
-    Events:
-    - Name: Play
-      EventType: 14
-      ParameterString: Play
-      ParameterBoolOp: 0
-      ParameterBool: 0
-      ParameterFloat: 0
-      ParameterInt: 2
-      ParameterObject: {fileID: 0}
-      ParameterObjects:
-      - {fileID: 1475252449682926}
-      ParameterBytes: 
-    Name: Unnamed
-    Others: []
-    Key: 0
-    TriggerIndividuals: 0
-    Layers:
-      serializedVersion: 2
-      m_Bits: 0
-    Repeat: 0
-    LowPeriodTime: 0
-    HighPeriodTime: 0
-    ResetOnEnable: 0
-    EventFired: 0
-    Duration: 0
-    Timer: 0
-    DataElementIdx: 0
-    DataStorageShadowValues:
-    - ParameterString: 
-      ParameterBoolOp: 
-      ParameterFloat: 
-      ParameterInt: 
-    AfterSeconds: 0
-    ProbabilityLock: 
-    Probabilities: []
-    MidiChannel: 0
-    MidiNote: 0
-    OscAddr: 
+  TakesOwnershipIfNecessary: 0
+  Triggers: []
 --- !u!114 &114755859002861738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2696,13 +2658,14 @@ MonoBehaviour:
   m_Script: {fileID: 394927577, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomentumTransferMethod: 0
   DisallowTheft: 0
-  physicalRoot: {fileID: 0}
   ExactGun: {fileID: 0}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 0
   AutoHold: 0
+  InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
   UseDownEventName: 
@@ -2716,10 +2679,6 @@ MonoBehaviour:
   currentLocalPlayer: {fileID: 0}
   pickupable: 0
   proximity: 2
-  originalKinematic: 0
-  originalGravity: 1
-  originalTrigger: 0
-  originalParent: {fileID: 0}
 --- !u!114 &114805067954809936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2778,9 +2737,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114817477628725974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3025,6 +2981,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -3040,6 +2997,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1475252449682926}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3078,9 +3036,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114889344907583790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3187,6 +3142,23 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114898729078062244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055721052367894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1125178822, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 10
+  Far: 80
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 0
 --- !u!114 &114911002191930314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3247,9 +3219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114944443392131662
 MonoBehaviour:
   m_ObjectHideFlags: 1

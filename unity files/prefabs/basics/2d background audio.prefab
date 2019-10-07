@@ -20,12 +20,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4525678401495226}
   - component: {fileID: 82426122972444946}
+  - component: {fileID: 114376583224195850}
   m_Layer: 0
   m_Name: 2d background audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &4525678401495226
 Transform:
@@ -33,7 +34,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1002557945351508}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -49,7 +50,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8e6eb6c9a53854e45950dcf8b6f24cd7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.05
   m_Pitch: 1
@@ -60,7 +61,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 0
-  MaxDistance: 500
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -126,3 +127,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114376583224195850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002557945351508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1125178822, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 10
+  Far: 80
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 0

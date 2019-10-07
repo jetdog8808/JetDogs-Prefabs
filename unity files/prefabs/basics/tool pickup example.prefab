@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1888986265663352}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.856, y: 1.781, z: -1.754}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4551557829787434}
@@ -83,6 +83,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -98,6 +99,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -151,13 +153,14 @@ MonoBehaviour:
   m_Script: {fileID: 394927577, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomentumTransferMethod: 0
   DisallowTheft: 1
-  physicalRoot: {fileID: 0}
   ExactGun: {fileID: 4551557829787434}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 2
   AutoHold: 1
+  InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
   UseDownEventName: 
@@ -171,10 +174,6 @@ MonoBehaviour:
   currentLocalPlayer: {fileID: 0}
   pickupable: 1
   proximity: 2
-  originalKinematic: 0
-  originalGravity: 1
-  originalTrigger: 0
-  originalParent: {fileID: 0}
 --- !u!114 &114343369147995710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,5 +187,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SynchronizePhysics: 1
   AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1

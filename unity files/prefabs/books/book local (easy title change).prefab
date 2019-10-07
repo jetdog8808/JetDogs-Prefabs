@@ -957,7 +957,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233415381707852}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 1.679, z: 5.139}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4726271395522882}
@@ -1016,6 +1016,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1031,6 +1032,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1048,6 +1050,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1063,6 +1066,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1725,13 +1729,14 @@ MonoBehaviour:
   m_Script: {fileID: 394927577, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomentumTransferMethod: 0
   DisallowTheft: 0
-  physicalRoot: {fileID: 0}
   ExactGun: {fileID: 0}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 0
   AutoHold: 1
+  InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
   UseDownEventName: 
@@ -1745,10 +1750,6 @@ MonoBehaviour:
   currentLocalPlayer: {fileID: 0}
   pickupable: 1
   proximity: 2
-  originalKinematic: 0
-  originalGravity: 1
-  originalTrigger: 0
-  originalParent: {fileID: 0}
 --- !u!114 &114356277612655626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1915,8 +1916,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SynchronizePhysics: 1
   AllowCollisionTransfer: 1
-  PlaymakerSyncState: 0
-  PlaymakerSyncVariables: 1
 --- !u!114 &114474995233704936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2111,6 +2110,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 4
@@ -2126,6 +2126,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1384105503824896}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 10
       ParameterString: 
@@ -2137,6 +2138,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1372050354658414}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2446,9 +2448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114689635122585666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2494,9 +2493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114716869250317646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3295,6 +3291,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 8
     BroadcastType: 4
@@ -3311,6 +3308,7 @@ MonoBehaviour:
       - {fileID: 1384105503824896}
       - {fileID: 1372050354658414}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3351,6 +3349,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1233415381707852}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3391,6 +3390,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1233415381707852}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -3783,7 +3783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000018119812, y: 0.0000059604645}
+  m_AnchoredPosition: {x: 0.000019073486, y: 0.0000076293945}
   m_SizeDelta: {x: -114, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224079163706750240
@@ -4183,7 +4183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000018119812, y: 0.0000059604645}
+  m_AnchoredPosition: {x: 0.000019073486, y: 0.0000076293945}
   m_SizeDelta: {x: -114, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224586394046738266
@@ -4375,7 +4375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000018119812, y: 0.0000059604645}
+  m_AnchoredPosition: {x: 0.000019073486, y: 0.0000076293945}
   m_SizeDelta: {x: -114, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224768294688907030

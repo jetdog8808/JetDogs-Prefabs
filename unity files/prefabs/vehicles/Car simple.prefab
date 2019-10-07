@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 146873780207410204}
   - component: {fileID: 82278879154680142}
   - component: {fileID: 114055117464692980}
+  - component: {fileID: 114667866562894338}
   m_Layer: 13
   m_Name: WheelHubRearRight
   m_TagString: Untagged
@@ -221,6 +222,7 @@ GameObject:
   - component: {fileID: 146699285146062210}
   - component: {fileID: 82379309769670264}
   - component: {fileID: 114811000776545092}
+  - component: {fileID: 114547025515210382}
   m_Layer: 13
   m_Name: WheelHubRearLeft
   m_TagString: Untagged
@@ -377,6 +379,7 @@ GameObject:
   - component: {fileID: 146278158147227542}
   - component: {fileID: 82193013723318984}
   - component: {fileID: 114797565154502930}
+  - component: {fileID: 114864397568870726}
   m_Layer: 13
   m_Name: WheelHubFrontLeft
   m_TagString: Untagged
@@ -395,6 +398,7 @@ GameObject:
   - component: {fileID: 146590246698471300}
   - component: {fileID: 82519000001969064}
   - component: {fileID: 114726493962271208}
+  - component: {fileID: 114579577407636012}
   m_Layer: 13
   m_Name: WheelHubFrontRight
   m_TagString: Untagged
@@ -458,7 +462,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1561213180756264}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4936244095801584}
@@ -1194,7 +1198,7 @@ Rigidbody:
   m_Drag: 0.1
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1208,8 +1212,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 3}
-  m_Center: {x: 0, y: 0.5, z: 0.25}
+  m_Size: {x: 2, y: 0.8, z: 3}
+  m_Center: {x: 0, y: 0.4, z: 0.25}
 --- !u!65 &65296796786257386
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1285,7 +1289,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 1
-  Spatialize: 1
+  Spatialize: 0
   SpatializePostEffects: 0
   Priority: 256
   DopplerLevel: 0
@@ -1365,7 +1369,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 1
-  Spatialize: 1
+  Spatialize: 0
   SpatializePostEffects: 0
   Priority: 256
   DopplerLevel: 0
@@ -1445,7 +1449,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 1
-  Spatialize: 1
+  Spatialize: 0
   SpatializePostEffects: 0
   Priority: 256
   DopplerLevel: 0
@@ -1525,7 +1529,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 1
-  Spatialize: 1
+  Spatialize: 0
   SpatializePostEffects: 0
   Priority: 256
   DopplerLevel: 0
@@ -1622,6 +1626,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 0
     BroadcastType: 7
@@ -1637,17 +1642,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1132379288527322}
       ParameterBytes: 
-    - Name: DisableKinematic
-      EventType: 14
-      ParameterString: DisableKinematic
-      ParameterBoolOp: 0
-      ParameterBool: 0
-      ParameterFloat: 0
-      ParameterInt: 0
-      ParameterObject: {fileID: 0}
-      ParameterObjects:
-      - {fileID: 1561213180756264}
-      ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: buffered enter
     Others: []
     Key: 0
@@ -1664,10 +1659,6 @@ MonoBehaviour:
     Timer: 0
     DataElementIdx: 0
     DataStorageShadowValues:
-    - ParameterString: 
-      ParameterBoolOp: 
-      ParameterFloat: 
-      ParameterInt: 
     - ParameterString: 
       ParameterBoolOp: 
       ParameterFloat: 
@@ -1692,6 +1683,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1150836252225330}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: TakeOwnership
       EventType: 14
       ParameterString: TakeOwnership
@@ -1703,6 +1695,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1561213180756264}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 21
       ParameterString: UnityStandardAssets.Vehicles.Car.CarController
@@ -1714,6 +1707,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1561213180756264}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 21
       ParameterString: UnityStandardAssets.Vehicles.Car.CarUserControl
@@ -1725,6 +1719,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1561213180756264}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: local enter
     Others: []
     Key: 0
@@ -1777,6 +1772,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1150836252225330}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 21
       ParameterString: UnityStandardAssets.Vehicles.Car.CarController
@@ -1788,6 +1784,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1561213180756264}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     - Name: 
       EventType: 21
       ParameterString: UnityStandardAssets.Vehicles.Car.CarUserControl
@@ -1799,6 +1796,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1561213180756264}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: local exit
     Others: []
     Key: 0
@@ -1847,17 +1845,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1132379288527322}
       ParameterBytes: 
-    - Name: EnableKinematic
-      EventType: 14
-      ParameterString: EnableKinematic
-      ParameterBoolOp: 1
-      ParameterBool: 0
-      ParameterFloat: 0
-      ParameterInt: 0
-      ParameterObject: {fileID: 0}
-      ParameterObjects:
-      - {fileID: 1561213180756264}
-      ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: buffered exit
     Others: []
     Key: 0
@@ -1874,10 +1862,6 @@ MonoBehaviour:
     Timer: 0
     DataElementIdx: 0
     DataStorageShadowValues:
-    - ParameterString: 
-      ParameterBoolOp: 
-      ParameterFloat: 
-      ParameterInt: 
     - ParameterString: 
       ParameterBoolOp: 
       ParameterFloat: 
@@ -1900,9 +1884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114293612915352708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1947,6 +1928,23 @@ MonoBehaviour:
   OnLocalPlayerExitStation:
     TriggerObject: {fileID: 1452439685367152}
     CustomName: local exit
+--- !u!114 &114547025515210382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1353117307088550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1125178822, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 10
+  Far: 40
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 0
 --- !u!114 &114559126054727542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1965,6 +1963,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -1980,6 +1979,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1452439685367152}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2024,6 +2024,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 17
     BroadcastType: 2
@@ -2039,6 +2040,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1452439685367152}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: Unnamed
     Others: []
     Key: 0
@@ -2076,6 +2078,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114579577407636012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1843784151888904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1125178822, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 10
+  Far: 40
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 0
+--- !u!114 &114667866562894338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171789611151906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1125178822, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 10
+  Far: 40
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 0
 --- !u!114 &114726493962271208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2142,9 +2178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114797565154502930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2184,13 +2217,14 @@ MonoBehaviour:
   m_Script: {fileID: 394927577, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomentumTransferMethod: 0
   DisallowTheft: 1
-  physicalRoot: {fileID: 0}
   ExactGun: {fileID: 0}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 0
   AutoHold: 2
+  InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
   UseDownEventName: 
@@ -2204,10 +2238,23 @@ MonoBehaviour:
   currentLocalPlayer: {fileID: 0}
   pickupable: 0
   proximity: 0
-  originalKinematic: 0
-  originalGravity: 1
-  originalTrigger: 0
-  originalParent: {fileID: 0}
+--- !u!114 &114864397568870726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805945201376870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1125178822, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 10
+  Far: 40
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 0
 --- !u!114 &114890596414308774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2220,9 +2267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!146 &146278158147227542
 WheelCollider:
   m_ObjectHideFlags: 1

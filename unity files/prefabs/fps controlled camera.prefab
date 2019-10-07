@@ -89,7 +89,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1160881644455532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4806387172993616}
@@ -282,13 +282,14 @@ MonoBehaviour:
   m_Script: {fileID: 394927577, guid: f78c4655b33cb5741983dc02e08899cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomentumTransferMethod: 0
   DisallowTheft: 0
-  physicalRoot: {fileID: 0}
   ExactGun: {fileID: 0}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 0
   AutoHold: 0
+  InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
   UseDownEventName: 
@@ -302,10 +303,6 @@ MonoBehaviour:
   currentLocalPlayer: {fileID: 0}
   pickupable: 1
   proximity: 2
-  originalKinematic: 0
-  originalGravity: 1
-  originalTrigger: 0
-  originalParent: {fileID: 0}
 --- !u!114 &114685236658419694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -318,9 +315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: []
-  CombinedNetworkId: -1
-  _dispatcher: {fileID: 0}
-  _registered: 0
 --- !u!114 &114839117972372694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -391,6 +385,7 @@ MonoBehaviour:
   isHidden: 0
   UsesAdvancedOptions: 1
   ShowHelp: 1
+  TakesOwnershipIfNecessary: 0
   Triggers:
   - TriggerType: 0
     BroadcastType: 4
@@ -406,6 +401,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1117358681282608}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: off
     Others: []
     Key: 0
@@ -446,6 +442,7 @@ MonoBehaviour:
       ParameterObjects:
       - {fileID: 1117358681282608}
       ParameterBytes: 
+      TakeOwnershipOfTarget: 0
     Name: 15 fps
     Others: []
     Key: 0

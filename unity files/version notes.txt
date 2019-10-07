@@ -1,3 +1,20 @@
+V3.2
+*added avatar editor scripts
+*fixed particle guns
+*removed some shader keywords
+*changed pickup reseter to respawn method
+*random small fixes everywhere
+*fixed optimized mirror
+*added player audio override zone example
+*updated audio sources with vrc spatial audio source script
+*fixed car prefab
+*added synced world typing
+*added a better keypad
+*added third person controller examples
+*added rolling ball controller example
+*added ball vehicle
+*added world audio sfx
+
 V3.0.1
 *small fixes
 *updated button event

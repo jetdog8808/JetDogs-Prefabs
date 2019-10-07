@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1539021836268548}
+  m_IsPrefabParent: 1
+--- !u!1 &1539021836268548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4176669382049434}
+  - component: {fileID: 81053904248849610}
+  - component: {fileID: 169391785425993544}
+  - component: {fileID: 165632439555354476}
+  - component: {fileID: 168599456644761894}
+  - component: {fileID: 170704828890383866}
+  - component: {fileID: 164203071354339136}
+  - component: {fileID: 166992600187817850}
+  m_Layer: 0
+  m_Name: audio sfx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4176669382049434
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539021836268548}
+  m_LocalRotation: {x: -0, y: -0.000000044703484, z: -0, w: -1}
+  m_LocalPosition: {x: 35.49999, y: 0, z: -113.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &81053904248849610
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539021836268548}
+  m_Enabled: 1
+--- !u!164 &164203071354339136
+AudioReverbFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539021836268548}
+  m_Enabled: 0
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: -100
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.83
+  m_ReflectionsLevel: -2602
+  m_ReverbLevel: 200
+  m_ReverbDelay: 0.011
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 1
+--- !u!165 &165632439555354476
+AudioHighPassFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539021836268548}
+  m_Enabled: 0
+  m_CutoffFrequency: 5000
+  m_HighpassResonanceQ: 1
+--- !u!166 &166992600187817850
+AudioChorusFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539021836268548}
+  m_Enabled: 0
+  m_DryMix: 0.5
+  m_WetMix1: 0.5
+  m_WetMix2: 0.5
+  m_WetMix3: 0.5
+  m_Delay: 40
+  m_Rate: 0.8
+  m_Depth: 0.03
+--- !u!168 &168599456644761894
+AudioEchoFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539021836268548}
+  m_Enabled: 0
+  m_Delay: 500
+  m_DecayRatio: 0.5
+  m_WetMix: 1
+  m_DryMix: 1
+--- !u!169 &169391785425993544
+AudioLowPassFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539021836268548}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.2275259
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!170 &170704828890383866
+AudioDistortionFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539021836268548}
+  m_Enabled: 0
+  m_DistortionLevel: 0.5

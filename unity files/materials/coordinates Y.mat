@@ -9,7 +9,7 @@ Material:
   m_Name: coordinates Y
   m_Shader: {fileID: 4800000, guid: 43fda09a158537b468b993daa039b4f7, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -28,18 +28,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cutoff: 0.5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilOpFail: 0
-    - _StencilOpZFail: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _X: 0
-    - _Z: 0
     - _height: 9
     - _right: 0
     - _up: 4
     - _width: 9
+    - _xyz: 1
     m_Colors:
     - _color: {r: 0, g: 1, b: 0, a: 1}
