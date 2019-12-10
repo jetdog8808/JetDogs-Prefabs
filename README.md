@@ -16,7 +16,7 @@ Built in Unity 2017.4.28f1
 
 You can get the latest release [here](https://github.com/jetdog8808/JetDogs-Prefabs/releases) or you can [clone this repository](https://services.github.com/on-demand/github-desktop/clone-repository-github-desktop) directly into your unity assets folder.
 
-If you want to help support what I do: [![patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/jetdoglabs)
+If you want to help support what I do: [![patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=18920865)
 ----------
 ## Requirements
 
