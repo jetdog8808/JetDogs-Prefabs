@@ -1,0 +1,11 @@
+{
+    "name": "com.jetdoglabs.jetdogs-prefabs",
+    "version": "4.0.0",
+    "displayName": "Jetdogs Prefabs",
+    "unity": "2018.4",
+    "description": "A collection of usful prefabs for vrchat world creators.",
+    "dependencies": {
+        "com.unity.postprocessing": "2.3.0", 
+
+    }
+}

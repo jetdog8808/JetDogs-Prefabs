@@ -1,3 +1,22 @@
+V4.0
+*removed legacy prefabs
+*updated some prefabs to use prefab varients and nested prefabs.
+*engine change
+*updated guns
+*removed smooth shift
+*updated info panel
+*remade ui example
+*udated some ui with layout components
+*removed webpanels
+*keypad now has backspace
+*keyboards now have the "q" key.
+*keyboards using physical keyboards can use shift more then once now
+*dragable ui prefab
+*package manager support
+*added model to avatar pedastal example
+*changed postprocessing to post processing layer.
+
+
 V3.2
 *added avatar editor scripts
 *fixed particle guns
